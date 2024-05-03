@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>reminder app</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+        <h1 class="title">remindr - To do</h1>
+        <div class="input-wrapper">
+          <button class="create-modal" onclick="openNewModal()">Create Task</button>
+          <!-- MODAL -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="inputs">
+                <div class="input">
+                  <label>Name of task</label>
+                  <input id="name-box" class="text-box" type="text" />
+                </div>
+                <div class="input">
+                    <label>Priority</label>
+                    <input id="priority-box" class="text-box" type="text" />
+                  </div>
+                <div class="input">
+                  <label>Description</label>
+                  <input id="desc-box" class="text-box" type="text" />
+                </div>
+                <button class="add-task">Add task</button>
+              </div>
+              <span class="close">X close</span>
+            </div>
+          </div>
+        </div> 
+        <!--För modal-->
+        <div class="todos-wrapper">
+            <div class="todo">
+            </div>
+            <div></div>
+          </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
